@@ -84,21 +84,25 @@ while gameon == ("true"):
 
     if UI == ("N"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("n"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("no"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("No"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
