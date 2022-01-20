@@ -13,7 +13,7 @@ if underage == ("no"):
 if underage == ("yes"):
     print("Aight Bet")
 
-time.sleep(1)
+time.sleep(3)
 
 print("_____________________________________")
 print("""\
@@ -50,20 +50,18 @@ while gameon == ("true"):
     os.system('cls' if os.name == 'nt' else 'clear')
 
     #now we reveal the numbers
-    list1 = ['1','2','3','4','5','6','7','8','9','1','2','3','4','5','6','8','9','1','2','3','4','5','6','1','2','3','4','1','2'];
-    
     #slotnumber1 = (1)
     #slotnumber2 = (1)
     #slotnumber3 = (1)
-    slotnumber1 = random.choice(list1)
-    slotnumber2 = random.choice(list1)
-    slotnumber3 = random.choice(list1)
-    slotnumber4 = random.choice(list1)
-    slotnumber5 = random.choice(list1)
-    slotnumber6 = random.choice(list1)
-    slotnumber7 = random.choice(list1)
-    slotnumber8 = random.choice(list1)
-    slotnumber9 = random.choice(list1)
+    slotnumber1 = random.randrange(10)
+    slotnumber2 = random.randrange(10)
+    slotnumber3 = random.randrange(10)
+    slotnumber4 = random.randrange(10)
+    slotnumber5 = random.randrange(10)
+    slotnumber6 = random.randrange(10)
+    slotnumber7 = random.randrange(10)
+    slotnumber8 = random.randrange(10)
+    slotnumber9 = random.randrange(10)
 
     print("-")
     print("-")
@@ -80,27 +78,31 @@ while gameon == ("true"):
         time.sleep(0.5)
        
 
-    UI = input("do you want to play again Y or N? ")
+    UI = input("do you want to play again Y or N ")
 
     #Spencer said to do the lists like this bc it makes the code look bigger
-    #this just does the various ways some one could say yes or no
+
     if UI == ("N"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("n"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("no"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
     if UI == ("No"):
         gameon = ("false")
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("You italian sausage")
         time.sleep(3)
         exit
@@ -120,48 +122,17 @@ while gameon == ("true"):
             gameon = ("true")
         else:
             gameon = ("true")
-#code for mass simulations and asks the user how many times they want to simulate
-    if UI == ("sim"):
-        onecount = (0)
-        twocount = (0)
-        threecount = (0)
-        fourcount = (0)
-        fivecount = (0)
-        sixcount = (0)
-        sevencount = 
-        wincount = (0)
-        loosecount = (0)
-        print("super sim mode enabled")
-        playnum = int(input("how many times do you want to simulate?"))
-        for counter in range(playnum):
-#code to actually run the game
-            print("-")
-            slotnumber1 = random.choice(list1)
-            slotnumber2 = random.choice(list1)
-            slotnumber3 = random.choice(list1)
-            slotnumber4 = random.choice(list1)
-            slotnumber5 = random.choice(list1)                
-            slotnumber6 = random.choice(list1)
-            slotnumber7 = random.choice(list1)
-            slotnumber8 = random.choice(list1)
-            slotnumber9 = random.choice(list1)
-            print (f"    |{slotnumber4}|-----|{slotnumber5}|-----|{slotnumber6}|")
-            print (f"--->|{slotnumber1}|-----|{slotnumber2}|-----|{slotnumber3}|<--- ")
-            print (f"    |{slotnumber7}|-----|{slotnumber8}|-----|{slotnumber9}|")
-            #modified versions of the if staetemnts to run the sims
-            if slotnumber3 == slotnumber2 == slotnumber1:
-               print("Win")
-               wincount += 1
-               #if slotnumber1 == 1:
-                #   onecount += 1
-                #if slotnumber1 == 2:
-                 #   twocount += 1
-                
-                   
-            else:
-                print("Lose")
-                loosecount += 1
-        print("Total Wins")
-        print (wincount)
-        print("Total loses")
-        print (loosecount)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
