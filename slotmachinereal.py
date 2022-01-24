@@ -128,7 +128,9 @@ while gameon == ("true"):
         fourcount = (0)
         fivecount = (0)
         sixcount = (0)
-        sevencount = 
+        sevencount = (0)
+        eightcount = (0)
+        ninecount = (0)
         wincount = (0)
         loosecount = (0)
         print("super sim mode enabled")
@@ -136,32 +138,76 @@ while gameon == ("true"):
         for counter in range(playnum):
 #code to actually run the game
             print("-")
-            slotnumber1 = random.choice(list1)
-            slotnumber2 = random.choice(list1)
-            slotnumber3 = random.choice(list1)
-            slotnumber4 = random.choice(list1)
-            slotnumber5 = random.choice(list1)                
-            slotnumber6 = random.choice(list1)
-            slotnumber7 = random.choice(list1)
-            slotnumber8 = random.choice(list1)
-            slotnumber9 = random.choice(list1)
+            slotnumber1 = int(random.choice(list1))
+            slotnumber2 = int(random.choice(list1))
+            slotnumber3 = int(random.choice(list1))
+            slotnumber4 = int(random.choice(list1))
+            slotnumber5 = int(random.choice(list1))                
+            slotnumber6 = int(random.choice(list1))
+            slotnumber7 = int(random.choice(list1))
+            slotnumber8 = int(random.choice(list1))
+            slotnumber9 = int(random.choice(list1))
             print (f"    |{slotnumber4}|-----|{slotnumber5}|-----|{slotnumber6}|")
             print (f"--->|{slotnumber1}|-----|{slotnumber2}|-----|{slotnumber3}|<--- ")
             print (f"    |{slotnumber7}|-----|{slotnumber8}|-----|{slotnumber9}|")
-            #modified versions of the if staetemnts to run the sims
+            #modified versions of the if staetemnts to run the sims and count totals
             if slotnumber3 == slotnumber2 == slotnumber1:
                print("Win")
                wincount += 1
-               #if slotnumber1 == 1:
-                #   onecount += 1
-                #if slotnumber1 == 2:
-                 #   twocount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (1):
+                onecount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (2):
+                twocount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (3):
+                threecount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (4):
+                fourcount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (5):
+                fivecount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (6):
+                sixcount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (7):
+                sevencount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (8):
+                eightcount += 1
+            if slotnumber3 == slotnumber2 == slotnumber1 == (9):
+                ninecount += 1
                 
                    
             else:
                 print("Lose")
                 loosecount += 1
-        print("Total Wins")
+#printstatements for the stats                
+        print ("Total Wins")
         print (wincount)
-        print("Total loses")
+        print()
+        print ("Total loses")
         print (loosecount)
+        print()
+        print ("number of Ones")
+        print (onecount)
+        print()
+        print ("Number of Twos")
+        print (twocount)
+        print()
+        print ("Number of Threes")
+        print (threecount)
+        print()
+        print ("Number of Fours")
+        print (fourcount)
+        print()
+        print ("Number of Fives")
+        print (fivecount)
+        print()
+        print ("Number of Sixes")
+        print (sixcount)
+        print()
+        print ("Number of Sevens")
+        print (sevencount)
+        print()
+        print ("Number of Eights")
+        print (eightcount)
+        print()
+        print ("Numer of Nines")
+        print (ninecount)
+        
