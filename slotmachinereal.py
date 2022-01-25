@@ -1,5 +1,6 @@
+#   copy right© 2022 Caden Higgins and Spencer Mcdonald, All rights reserved
+
 #Slot Machine For Underaged Gambling
-import math
 import random
 import os
 import time
@@ -7,6 +8,7 @@ import random
 #cleans up the terminal
 os.system('cls' if os.name == 'nt' else 'clear')
 #Actual code starts here
+#asks for age just for kicks
 underage = input("are you of the legal gambling age in your state? ")
 if underage == ("no"):
     print ("Perfect, Starting young.")
@@ -14,7 +16,7 @@ if underage == ("yes"):
     print("Aight Bet")
 
 time.sleep(1)
-
+#prints some fun ascii art
 print("_____________________________________")
 print("""\
  ________________________________   
@@ -37,7 +39,7 @@ gameon = ("true")
 while gameon == ("true"):
     input("Press enter to pull the lever")
 
-
+#prints some wheel animations
     timerend = time.time() + 3
     while time.time() < timerend:
         print('-----------------------------------------')
@@ -49,9 +51,9 @@ while gameon == ("true"):
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    #now we reveal the numbers
+    #This is the list that is drawn from randomly
     list1 = ['1','2','3','4','5','6','7','8','9','1','2','3','4','5','6','8','9','1','2','3','4','5','6','1','2','3','4','1','2'];
-    
+    #uncomment the next three lines then comment out the three after that to enable god mode
     #slotnumber1 = (1)
     #slotnumber2 = (1)
     #slotnumber3 = (1)
@@ -64,7 +66,7 @@ while gameon == ("true"):
     slotnumber7 = random.choice(list1)
     slotnumber8 = random.choice(list1)
     slotnumber9 = random.choice(list1)
-
+#now this calls the random numbers pulled from above and prints them for the user to see
     print("-")
     print("-")
     print (f"    |{slotnumber4}|-----|{slotnumber5}|-----|{slotnumber6}|")
@@ -136,7 +138,7 @@ while gameon == ("true"):
         print("super sim mode enabled")
         playnum = int(input("how many times do you want to simulate?"))
         for counter in range(playnum):
-#code to actually run the game
+#code to actually run the sim
             print("-")
             slotnumber1 = int(random.choice(list1))
             slotnumber2 = int(random.choice(list1))
@@ -212,3 +214,4 @@ while gameon == ("true"):
         print ("Numer of Nines")
         print (ninecount)
         
+
