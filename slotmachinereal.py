@@ -139,7 +139,7 @@ while gameon == ("true"):
         playnum = int(input("how many times do you want to simulate?"))
         for counter in range(playnum):
 #code to actually run the sim
-            print("-")
+            #print("-")
             slotnumber1 = int(random.choice(list1))
             slotnumber2 = int(random.choice(list1))
             slotnumber3 = int(random.choice(list1))
@@ -149,12 +149,11 @@ while gameon == ("true"):
             slotnumber7 = int(random.choice(list1))
             slotnumber8 = int(random.choice(list1))
             slotnumber9 = int(random.choice(list1))
-            print (f"    |{slotnumber4}|-----|{slotnumber5}|-----|{slotnumber6}|")
             print (f"--->|{slotnumber1}|-----|{slotnumber2}|-----|{slotnumber3}|<--- ")
-            print (f"    |{slotnumber7}|-----|{slotnumber8}|-----|{slotnumber9}|")
+            print()
             #modified versions of the if staetemnts to run the sims and count totals
             if slotnumber3 == slotnumber2 == slotnumber1:
-               print("Win")
+               #print("Win")
                wincount += 1
             if slotnumber3 == slotnumber2 == slotnumber1 == (1):
                 onecount += 1
