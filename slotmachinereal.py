@@ -180,6 +180,7 @@ while gameon == ("true"):
 #printstatements for the stats                
         print ("Total Wins")
         print (wincount)
+        time.sleep(0.5)
         print()
         print ("Total loses")
         print (loosecount)
